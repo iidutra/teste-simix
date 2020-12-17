@@ -1,0 +1,14 @@
+﻿@{
+    var numero = ViewData["Numeros"];
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Resultado">
+    <div class="form-group">
+        <label>Números Divisiveis</label>
+        <label>@numero</label>
+        <input class="form-control" value="@numero">
+    </div>
+    <button type="submit" class="btn btn-success"><em class="mdi mdi-check"></em> Mostrar Números</button>
+</form>
+
